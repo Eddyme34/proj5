@@ -8,7 +8,7 @@
 struct SXMLEntity{
     using TAttribute = std::pair< std::string, std::string >;
     enum class EType{StartElement, EndElement, CharData, CompleteElement};
-    EType DType;
+    EType DType;//Dtype of start element will compile
     std::string DNameData;
     std::vector< TAttribute > DAttributes;
     
